@@ -116,11 +116,11 @@ class CRM_Core_Payment_IntuitQuickbooks extends CRM_Core_Payment {
         <?qbmsxml version="2.0"?>
         <QBMSXML>
         <SignonMsgsRq>
-        <SignonAppCertRq>
+        <SignonDesktopRq>
         <ClientDateTime>'.date('Y-m-d\TH:i:s').'</ClientDateTime>
         <ApplicationLogin>'.$this->_getParam( 'applicationLogin' ).'</ApplicationLogin>
         <ConnectionTicket>'.$this->_getParam( 'connectionTicket' ).'</ConnectionTicket>
-        </SignonAppCertRq>
+        </SignonDesktopRq>
         </SignonMsgsRq>
         </QBMSXML>';
 
